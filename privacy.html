@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="no">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mycarbox Personvern</title>
+  <meta name="description" content="Personvernerklæring for Mycarbox." />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="nav">
+      <a href="index.html">Hjem</a>
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Personvern</a>
+    </div>
+
+    <div class="hero">
+      <div class="badge">Personvern</div>
+      <h1>Personvernerklæring</h1>
+      <p class="muted">Sist oppdatert: <span id="d"></span></p>
+
+      <div class="card">
+        <h2>Hva vi samler inn</h2>
+        <ul>
+          <li>E-postadresse og bruker-ID for innlogging og tilgangsstyring</li>
+          <li>Bilrelatert informasjon knyttet til kontoen (for eksempel registreringsnummer og forhandler-ID)</li>
+          <li>Dokumenter som lastes opp og knyttes til kjøp og garanti (der dette er aktivert av forhandler)</li>
+          <li>Tilbakemeldinger som sendes inn i appen (dersom funksjonen er i bruk)</li>
+        </ul>
+      </div>
+
+      <div class="card" style="margin-top:12px;">
+        <h2>Hvorfor vi samler inn data</h2>
+        <ul>
+          <li>For å levere appens kjernefunksjoner: vise bil, kontrakt, garanti og dokumenter</li>
+          <li>For å håndtere kundedialog og oppfølging ved tilbakemeldinger</li>
+          <li>For sikkerhet og tilgangskontroll</li>
+        </ul>
+      </div>
+
+      <div class="card" style="margin-top:12px;">
+        <h2>Lagring og tredjepart</h2>
+        <p>
+          Data lagres i Firebase (Google Cloud) for autentisering, database og dokumentlagring.
+          Data selges ikke til tredjepart.
+        </p>
+      </div>
+
+      <div class="card" style="margin-top:12px;">
+        <h2>Dine valg</h2>
+        <ul>
+          <li>Du kan kontakte oss for innsyn, retting eller sletting, der dette er mulig innenfor avtaleforholdet med forhandler.</li>
+          <li>Noe dokumentasjon må kunne beholdes av juridiske grunner, for eksempel knyttet til kjøp og garanti.</li>
+        </ul>
+      </div>
+
+      <div class="card" style="margin-top:12px;">
+        <h2>Kontakt</h2>
+        <p>E-post: <b>support@mycarbox.no</b></p>
+      </div>
+    </div>
+
+    <div class="footer">
+      © <span id="y"></span> Mycarbox
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+    document.getElementById("d").textContent = new Date().toISOString().slice(0,10);
+  </script>
+</body>
+</html>

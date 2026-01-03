@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="no">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mycarbox</title>
+  <meta name="description" content="Mycarbox support og personvern." />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="nav">
+      <a href="index.html">Hjem</a>
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Personvern</a>
+    </div>
+
+    <div class="hero">
+      <div class="badge">Mycarbox</div>
+      <h1>Mycarbox</h1>
+      <p class="muted">
+        Mycarbox er en app for bilkunder etter kjøp hos forhandler. Her finner du support og personvernerklæring.
+      </p>
+
+      <div class="grid">
+        <div class="card">
+          <h2>Support</h2>
+          <p>Har du spørsmål eller trenger hjelp? Gå til supportsiden for kontaktinfo og vanlige spørsmål.</p>
+          <p><a href="support.html" style="color: var(--accent); text-decoration: none;">Åpne support</a></p>
+        </div>
+        <div class="card">
+          <h2>Personvern</h2>
+          <p>Les hvordan Mycarbox håndterer data, hva som lagres og hvorfor.</p>
+          <p><a href="privacy.html" style="color: var(--accent); text-decoration: none;">Åpne personvern</a></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      © <span id="y"></span> Mycarbox
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
