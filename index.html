@@ -1,44 +1,57 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="no">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mycarbox</title>
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-  <div class="container">
 
-    <div class="nav">
-      <a href="/">Hjem</a>
-      <a href="/support.html">Support</a>
-      <a href="/privacy.html">Personvern</a>
-      <a href="https://dealer.mycarbox.no" class="dealer-button">Forhandler-innlogging</a>
+<div class="container">
+
+  <nav class="nav">
+    <a href="/">Hjem</a>
+    <a href="/support.html">Support</a>
+    <a href="/privacy.html">Personvern</a>
+
+    <span class="dealer-login">
+      <a href="https://dealer.mycarbox.no"
+         class="dealer-button"
+         target="_blank"
+         rel="noopener">
+        Forhandler-innlogging
+      </a>
+    </span>
+  </nav>
+
+  <section class="hero">
+    <h1>Mycarbox</h1>
+    <p class="muted">
+      Mycarbox er en app for bilkunder etter kjøp hos forhandler.
+      Her finner du support og personvernerklæring.
+    </p>
+  </section>
+
+  <div class="grid">
+    <div class="card">
+      <h2>Support</h2>
+      <p>Har du spørsmål eller trenger hjelp?</p>
+      <a href="/support.html">Åpne support</a>
     </div>
 
-    <div class="hero">
-      <h1>Mycarbox</h1>
-      <p class="muted">
-        Mycarbox er en app for bilkunder etter kjøp hos forhandler. Her finner du support og personvernerklæring.
-      </p>
-
-      <div class="grid">
-        <div class="card">
-          <div class="badge">Support</div>
-          <p>Har du spørsmål eller trenger hjelp? Gå til supportsiden for kontaktinfo og vanlige spørsmål.</p>
-          <p><a href="/support.html">Åpne support</a></p>
-        </div>
-
-        <div class="card">
-          <div class="badge">Personvern</div>
-          <p>Les hvordan Mycarbox håndterer data, hva som lagres og hvorfor.</p>
-          <p><a href="/privacy.html">Åpne personvern</a></p>
-        </div>
-      </div>
-
-      <div class="footer">© Mycarbox</div>
+    <div class="card">
+      <h2>Personvern</h2>
+      <p>Les hvordan Mycarbox håndterer data.</p>
+      <a href="/privacy.html">Åpne personvern</a>
     </div>
-
   </div>
+
+  <footer class="footer">
+    © Mycarbox
+  </footer>
+
+</div>
+
 </body>
 </html>
