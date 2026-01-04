@@ -86,3 +86,20 @@ p, li { color: var(--text); }
 @media (max-width: 720px) {
   .grid { grid-template-columns: 1fr; }
 }
+.dealer-login {
+  margin-left: auto;
+}
+
+.dealer-button {
+  display: inline-block;
+  padding: 10px 14px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 800;
+  background: #2b6cff;
+  color: #ffffff;
+}
+
+.dealer-button:hover {
+  filter: brightness(1.05);
+}
